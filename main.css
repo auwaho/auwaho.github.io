@@ -45,7 +45,7 @@ a:active {
 }
 
 .container {
-	position: absolute;
+	position: fixed;
 	margin: auto;
 	top: 3%;
 	right: 3%;
@@ -60,7 +60,7 @@ a:active {
 
 .hdr {
 	margin: auto;
-	margin-top: 15%;
+	margin-top: 13%;
 }
 
 .ftr {
