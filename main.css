@@ -61,11 +61,15 @@ a:active {
 
 .hdr {
 	margin: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 13%;
 }
 
 .ftr {
 	margin: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 25%;
 	position: sticky;
   	bottom: 5%;
