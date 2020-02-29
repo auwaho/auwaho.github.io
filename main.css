@@ -13,22 +13,21 @@ body {
 	font-size: 14pt;
 	font-weight: 300;
 	line-height: 2;
-	letter-spacing: 0.8em;
+	letter-spacing: 0.5em;
 	text-transform: uppercase;
 }
 
 img {
-	min-width: 30px;
+	min-width: 100px;
 	max-width: 150px;
 	border-radius: 50%;
-	/*border: 2px solid gray;*/
-	margin-bottom: 5%;
 }
 
 a:link,
 a:visited {
 	color: gray;
-	padding: 5%;
+	padding: 4.5%;
+	margin-block-end: 0.5em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -36,11 +35,13 @@ a:visited {
 	height: 18pt;
 	border: 1pt solid gray;
 	border-radius: 50%;
+	transition: background-color 1s ease;
 }
 
 a:hover,
 a:active {
-	color: pink;
+	transition: background-color 1s ease;
+	background-color: pink;
 }
 
 .container {
@@ -60,7 +61,6 @@ a:active {
 .hdr {
 	margin: auto;
 	margin-top: 15%;
-	margin-bottom: 15%;
 }
 
 .ftr {
@@ -82,7 +82,7 @@ h1 {
 	line-height: 1.3;
 	font-size: 1.85em;
 	letter-spacing: 0.2em;
-	margin: 0 0 0.525em 0;
+	margin: 10 0 0.525em 0;
 }
 
 p {
