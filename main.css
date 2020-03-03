@@ -62,7 +62,7 @@ a:active {
 	margin: auto;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 35px;
+	margin-top: 10%;
 }
 
 .ftr {
@@ -71,7 +71,7 @@ a:active {
 	margin-right: 5%;
 	margin-top: 20%;
 	position: sticky;
-	bottom: 35px;
+	bottom: 7.5%;
 	font-size: 18pt;
 }
 
