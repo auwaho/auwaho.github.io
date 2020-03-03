@@ -12,14 +12,13 @@ body {
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 14pt;
 	font-weight: 300;
-	line-height: 2;
+	line-height: 1;
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
 }
 
 img {
-	min-width: 100px;
-	max-width: 150px;
+	width: 45%;
 	border-radius: 50%;
 	border: 1px solid lightgrey;
 }
@@ -52,7 +51,7 @@ a:active {
 	right: 3%;
 	bottom: 3%;
 	left: 3%;
-	max-width: 450px;
+	max-width: 400px;
 	max-height: 600px;
 	background-color: whitesmoke;
 	border-radius: 12px;
@@ -63,17 +62,17 @@ a:active {
 	margin: auto;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 13%;
+	margin-top: 10%;
 }
 
 .ftr {
 	margin: auto;
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-top: 25%;
+	margin-top: 20%;
 	position: sticky;
-  	bottom: 5%;
-	font-size: 20pt;
+	bottom: 10%;
+	font-size: 18pt;
 }
 
 h1 {
