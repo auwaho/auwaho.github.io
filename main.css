@@ -58,7 +58,7 @@ a:link,
 a:visited {
 	color: gray;
 	padding: 4%;
-	margin-block-end: 12px;
+	margin-bottom: 12px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
