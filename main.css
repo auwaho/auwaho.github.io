@@ -14,7 +14,7 @@ body {
 img {
 	width: 40%;
 	border-radius: 50%;
-	border: 1px solid lightgrey;
+	/*border: 1px solid lightgrey;*/
 }
 
 footer {
