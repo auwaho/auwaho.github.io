@@ -40,5 +40,15 @@
 		</div>
 	</div>
 </body>
+	
+<script>
+	var bx = document.getElementById("box");
+	for (let s = 0; s < 50; s++) {
+		bx.style.transform = `scale(${s/10})`;
+		if (bx.offsetHeight * s / 10 > this.innerHeight / 1.15 || bx.offsetWidth * s / 10 > this.innerWidth / 1.15) {
+			break;
+		}
+	}
+</script>
 
 </html>
