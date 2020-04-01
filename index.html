@@ -13,7 +13,7 @@
 <body>
 	<div class="outer">
 		<div class="middle">
-			<div class="inner" id="inr">
+			<div class="inner">
 
 				<header>
 					<img src="images/avatar.jpg" />
@@ -40,20 +40,5 @@
 		</div>
 	</div>
 </body>
-
-<script>
-	function scale() {
-		for (let s = 0; s < 5; s+=0.01) {
-			if (inr.offsetHeight * s > this.innerHeight / 1.15 || inr.offsetWidth * s > this.innerWidth / 1.15) {
-				break;
-			}else{
-				inr.style.transform = `scale(${s})`;
-			}
-		}
-	}
-	var inr = document.getElementById("inr");
-	window.addEventListener('resize', scale);
-	scale();
-</script>
 
 </html>
