@@ -1,26 +1,25 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-
 body {
 	background: linear-gradient(45deg, #e66465, #9198e5) fixed;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 14pt;
+	font-size: 2.5vh;
 	line-height: 1;
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
 }
 
 img {
-	width: 40%;
+	width: 7em;
 	border-radius: 50%;
 	/*border: 1px solid lightgrey;*/
 }
 
 footer {
 	margin: auto;
-	margin-top: 45px;
-	font-size: 16pt;
+	margin-top: 2em;
+	font-size: 1.2em;
 }
 
 
@@ -34,8 +33,8 @@ h1 {
 	font: inherit;
 	vertical-align: baseline;
 	color: #313f47;
-	line-height: 1.2;
-	font-size: 1.85em;
+	line-height: 1.2em;
+	font-size: 2em;
 	letter-spacing: 0.2em;
 }
 
@@ -50,6 +49,7 @@ p {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+	font-size: 1.1em;
 }
 
 
@@ -58,13 +58,13 @@ a:link,
 a:visited {
 	color: gray;
 	padding: 4%;
-	margin-bottom: 12px;
+	margin-bottom: 0.6em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	width: 16pt;
-	height: 16pt;
-	border: 1pt solid gray;
+	width: 1em;
+	height: 1em;
+	border: 0.05em solid gray;
 	border-radius: 50%;
 	transition: background-color 1s ease;
 }
@@ -82,6 +82,8 @@ a:active {
 	left: 0;
 	height: 100%;
 	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 .middle {
@@ -89,20 +91,18 @@ a:active {
 	vertical-align: middle;
 	padding-left: 3%;
 	padding-right: 3%;
-	padding-top: 3%;
-	padding-bottom: 3%;
 }
 
 .inner {
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	max-width: 280px;
-	max-height: 500px;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 2.1em;
+	padding-bottom: 2.1em;
+	max-width: 17.5em;
+	max-height: 25em;
 	background-color: whitesmoke;
-	border-radius: 12px;
+	border-radius: 0.8em;
 	text-align: center;
 }
