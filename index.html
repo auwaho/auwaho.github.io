@@ -13,7 +13,7 @@
 <body>
 	<div class="outer">
 		<div class="middle">
-			<div class="inner" id="box">
+			<div class="inner" id="inr">
 
 				<header>
 					<img src="images/avatar.jpg" />
@@ -43,14 +43,15 @@
 
 <script>
 	function scale() {
-		for (let s = 0; s < 50; s++) {
-			bx.style.transform = `scale(${s/10})`;
-			if (bx.offsetHeight * s / 10 > this.innerHeight / 1.15 || bx.offsetWidth * s / 10 > this.innerWidth / 1.15) {
+		for (let s = 0; s < 5; s+=0.01) {
+			if (inr.offsetHeight * s > this.innerHeight / 1.15 || inr.offsetWidth * s > this.innerWidth / 1.15) {
 				break;
+			}else{
+				inr.style.transform = `scale(${s})`;
 			}
 		}
 	}
-	var bx = document.getElementById("box");
+	var inr = document.getElementById("inr");
 	window.addEventListener('resize', scale);
 	scale();
 </script>
