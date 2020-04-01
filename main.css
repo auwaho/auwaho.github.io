@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
 body {
-	background: linear-gradient(45deg, #e66465, #9198e5);
+	background: linear-gradient(45deg, #e66465, #9198e5) fixed;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 2.5vh;
 	line-height: 1;
@@ -13,6 +13,7 @@ body {
 img {
 	width: 7em;
 	border-radius: 50%;
+	/*border: 1px solid lightgrey;*/
 }
 
 footer {
