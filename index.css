@@ -1,0 +1,251 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: auto;
+}
+
+body {
+    display: grid;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    background: linear-gradient(45deg, #e66465, #9198e5, #ae5bb6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.outer {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    position: relative;
+    background-color: white;
+    margin: 8px;
+    width: min( 95%, 500px );
+    height: min( 95%, 800px );
+    max-width: 100%;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 480px) {
+    .inner {
+        height: min( 95%, 700px );
+    }
+}
+
+.portfolio {
+    padding: 10% 5%;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* photo */
+
+.portfolio__photo {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    user-select: none;
+    pointer-events: none;
+}
+@media (max-width: 480px) {
+    .portfolio__photo {
+        height: 180px;
+        width: 180px;
+    }
+}
+@media (max-width: 320px) {
+    .portfolio__photo {
+        height: 160px;
+        width: 160px;
+    }
+}
+
+
+
+/* name and profession */
+
+.portfolio__text {
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-size: 72px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.portfolio__text__title {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 0;
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(45deg, #e66465, #9198e5, #ae5bb6);
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 15s ease infinite;
+}
+@media (max-width: 480px) {
+    .portfolio__text__title {
+        font-size: 48px
+    }
+}
+@media (max-width: 320px) {
+    .portfolio__text__title {
+        font-size: 40px
+    }
+}
+
+.portfolio__text__subtitle {
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(116, 116, 116);
+    position: relative;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 480px) {
+    .portfolio__text__subtitle {
+        font-size: 20px
+    }
+}
+@media (max-width: 320px) {
+    .portfolio__text__subtitle {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+
+.portfolio__text__subtitle::before,
+.portfolio__text__subtitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.portfolio__text__subtitle::before {
+    background: white;
+    animation: typing 3s steps(16) 1.5s forwards;
+}
+
+.portfolio__text__subtitle::after {
+    width: .08em;
+    height: 1.1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: black;
+    animation: 
+        typing 3s steps(16) 1.5s forwards,
+        blinking 0.9s steps(16) infinite;
+}
+
+@keyframes typing {
+    to {
+        left: 98%;
+    }
+}
+@keyframes blinking {
+    to {
+        background: transparent;
+    }
+}
+
+
+
+/* nav links */
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    width: 100%;
+}
+
+.nav__item {
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(216, 216, 216);
+    background: white;
+    transition: .5s;
+}
+@media (max-width: 480px) {
+    .nav__item {
+        width: 54px;
+        height: 54px;
+    }
+}
+@media (max-width: 320px) {
+    .nav__item {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.nav__item:hover {
+    border: 1px solid rgb(116, 116, 116);
+}
+
+.nav__item__link {
+    font-size: 28px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+    user-select: none;
+    font-weight: 800;
+    fill: rgb(86, 86, 86);
+}
+@media (max-width: 480px) {
+    .nav__item__link {
+        font-size: 24px;
+    }
+}
+@media (max-width: 320px) {
+    .nav__item__link {
+        font-size: 22px;
+    }
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
