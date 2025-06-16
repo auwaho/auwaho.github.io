@@ -3,6 +3,7 @@
 
 html,
 body {
+    --bg-gradient: linear-gradient(45deg, #e66465, #9198e5, #ae5bb6);
     position: relative;
     height: 100%;
     margin: auto;
@@ -26,9 +27,9 @@ body {
 body {
     display: grid;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
-    background: linear-gradient(45deg, #e66465, #9198e5, #ae5bb6);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+    background: var(--bg-gradient);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .outer {
@@ -40,10 +41,10 @@ body {
 
 .inner {
     position: relative;
-    background-color: white;
+    background-color: #ffffff;
     margin: 0.5rem;
-    width: min( 95%, 30rem );
-    height: min( 95%, 50rem );
+    width: min(95%, 30rem);
+    height: min(95%, 50rem);
     max-width: 100%;
     border-radius: 1.25rem;
 
@@ -61,25 +62,21 @@ body {
     flex-direction: column;
 }
 
-
-
 /* photo */
 
 .portfolio__photo {
     height: 12.5rem;
     width: 12.5rem;
+    opacity: 0.9;
     object-fit: cover;
     border-radius: 50%;
     user-select: none;
     pointer-events: none;
 }
 
-
-
 /* name and profession */
 
 .portfolio__text {
-    letter-spacing: 0.4375rem;
     text-transform: uppercase;
     font-size: 4.5rem;
     user-select: none;
@@ -87,11 +84,12 @@ body {
 }
 
 .portfolio__text__title {
+    letter-spacing: 0.4375rem;
     font-size: 3.5rem;
     font-weight: 300;
     margin-bottom: 0;
     animation: gradient 15s ease infinite;
-    background: linear-gradient(45deg, #e66465, #9198e5, #ae5bb6);
+    background: var(--bg-gradient);
     background-size: 400% 400%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -100,18 +98,22 @@ body {
 }
 
 .portfolio__text__subtitle {
-    font-size: 1.5625rem;
+    --typing-steps: 18;
     font-weight: 200;
-    color: rgb(116, 116, 116);
+    letter-spacing: 0.4rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    color: #747474;
     position: relative;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
+    transform: scaleY(1.2);
 }
 
 .portfolio__text__subtitle::before,
 .portfolio__text__subtitle::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -120,24 +122,23 @@ body {
 }
 
 .portfolio__text__subtitle::before {
-    background: white;
-    animation: typing 3s steps(16) 1.5s forwards;
+    background: #ffffff;
+    animation: typing 2s steps(var(--typing-steps)) 1s forwards;
 }
 
 .portfolio__text__subtitle::after {
-    width: .08em;
-    height: 1.1em;
+    width: 0.1em;
+    height: 1em;
     margin-top: auto;
     margin-bottom: auto;
-    background: black;
-    animation: 
-        typing 3s steps(16) 1.5s forwards,
-        blinking 0.9s steps(16) infinite;
+    background: #000000;
+    animation: typing 2s steps(var(--typing-steps)) 1s forwards,
+        blinking 0.9s steps(var(--typing-steps)) infinite;
 }
 
 @keyframes typing {
     to {
-        left: 98%;
+        left: 99%;
     }
 }
 @keyframes blinking {
@@ -145,8 +146,6 @@ body {
         background: transparent;
     }
 }
-
-
 
 /* nav links */
 
@@ -167,13 +166,13 @@ body {
     justify-content: center;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid rgb(216, 216, 216);
-    background: white;
-    transition: .5s;
+    border: 1px solid #d8d8d8;
+    background: #ffffff;
+    transition: 0.5s;
 }
 
 .nav__item:hover {
-    border: 1px solid rgb(116, 116, 116);
+    border: 1px solid #747474;
 }
 
 .nav__item__link {
@@ -186,21 +185,20 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: rgb(86, 86, 86);
+    color: #565656;
     user-select: none;
     font-weight: 800;
-    fill: rgb(86, 86, 86);
+    fill: #565656;
 }
 
-
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
